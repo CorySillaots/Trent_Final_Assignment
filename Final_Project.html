@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Project for Javascript (1.1 Variables)</title> 
+<meta name="author" content="my name"> 
+<meta name="keywords" content="Javascript Cheat Sheet"> 
+
+<!-- External Style sheets -->
+<link rel="stylesheet" type="text/css" href="_CSS/reset.css">
+<link rel="stylesheet" type="text/css" href="_CSS/fonts.css">
+<link rel="stylesheet" type="text/css" href="_CSS/global_css.css">
+
+<!-- External Scripts -->
+<script type="text/javascript" src="_assets/A1.js"></script>
+
+</head>
+
+<body>
+<noscript>This website will require JavaScript to be enabled</noscript>
+
+<h1>Javascript Cheat Sheet</h1> 
+<h2>By my name</h2> 
+<div id="navigation"> 
+<ul id="mainNav"> 
+        <li><a href="Final_Project.html" 
+        onClick="document.getElementById('sideNav-JWB').style.display = 'none';
+        document.getElementById('sideNav-JLF').style.display = 'block'; return false">
+        JavaScript Language Fundamentals</a></li> 
+        <li><a href="#" 
+        onClick="document.getElementById('sideNav-JLF').style.display = 'none';
+        document.getElementById('sideNav-JWB').style.display = 'block'; return false">
+        JavaScript - Web Document Interaction</a></li> 
+</ul> 
+</div> 
+
+<div id="mainContent"> 
+<div id="sideNav"> 
+  <ul id="sideNav-JLF" style="display: block;"> 
+          <li><a href="Final_Project.html">1.1. Variables</a></li> 
+          <li><a href="operators.html">1.2. Operators</a></li> 
+          <li><a href="conditionals.html">1.3. Conditional Statements (if - else if , switch)</a></li> 
+          <li><a href="loops.html">1.4. Loops (for loop + your choice of another loop)</a></li> 
+          <li><a href="functions.html">1.5. Functions</a></li> 
+          <li><a href="objects.html">1.6. JS Objects - General Overview</a></li> 
+          <li><a href="build-in.html">1.7. JS Built-in Objects - A List of at least 5 built-in JS objects</a></li> 
+          <li><a href="arrays.html">1.8. Array Object (in detail)</a></li> 
+          <li><a href="strings.html">1.9. String Object (in detail)</a></li> 
+  </ul> 
+  <ul id="sideNav-JWB" style="display: none;"> 
+          <li><a href="browser.html">2.1. Browser Objects</a></li> 
+          <li><a href="web.html">2.2. HTML Objects</a></li> 
+          <li><a href="events.html">2.3. Events</a></li> 
+  </ul> 
+</div> 
+
+<div id="content" class="float-right"> 
+    <section class="nameDefintion"> 
+        <h3>1.1 Variables</h3> 
+        <p>A variable is a "container" for a piece of information or data. The data can be a wide variety of things like a number, letters, an object, a function, a path to a reference, or an expression, for example. A variable can be global: available to all parts of a script, or local: available to only specific parts of a script, like a specific function. A variable can be used to stream-line script writing, which will lessen errors, and also allow for greater ease-of-understanding when editing or updating a script at a later time.</p> 
+    </section> 
+    <section class="generalSyntax"> 
+    <h4>General Syntax</h4> 
+        <p>Here are four examples of creating a variable and assigning a value to it. Variables must start with a letter and although they can contain numbers, they cannot start with one. Variables are also case-sensitive, and JavaScript has reserved certain words so they cannot be used as variable names</p> 
+        <p>The key word <em>"var"</em> is the clue to declaring a variable.</p>
+        <p class="JScode">var placeholder; <br/>
+        //this initializes the variable but does not assign a value to it (the auto-generated value is &quot;undefined&quot;)</p> 
+        <p>To assign a string or text value to a variable, you must use quotes around the value</p> 
+        <p class="JScode">var placeholder-text = "Some Text Here"; <br/>//this initializes AND assigns a string value to the variable</p> 
+        <p>No quotes are needed to assign a numeric value.</p> 
+        <p class="JScode">var placeholder-number = 10;  <br/>// this variable has a number assigned to it</p> 
+        <p>Variables can hold regular expressions as well, with the variable returning the result. Please remember that when a text value and a number value are added together, the result will be a text or string value.</p> 
+        <p class="JScode">var placeholder-both = (placeholder-text + placeholder-number); <br/>//this variable has an expression as its value </p> 
+        <p>The result of the last variable declaration would be "Some Text Here10".</p> 
+    </section> 
+    <section class="methods"> 
+    <h4>Methods</h4> 
+        <p>You assign values to variables using the "=" operator, which means "assign the value on the right to the variable name on the left" </p>
+	<p class="JScode">var GreetingString = "Hello ";</p>
+        <p>You can "add" variables together using the "+" operator.</p> 
+        <p class="JScode">var thanksForResponding = GreetingString + myName;</p>
+    </section> 
+    <section class="properties"> 
+    <h4>Properties</h4> 
+    <p>A variable may have properties depending on how it was created. If it was created within a function, it probably has properties. If it was created as a global variable, it probably does not.</p>
+    </section> 
+    <section class="exampleCode"> 
+    <h4>Examples</h4> 
+    <p class="JScode">//Script Sample for Variables 1.1<br/>
+function runCodeVariables_onClick() {<br/>
+//setting up the response text. Using "\n" to force a new line when needed<br/>
+      var GreetingString = "Hello ";<br/>
+	  var ageString1 = "\nWOW, you are ";<br/>
+	  var ageString2 = " years old!";<br/>
+	  var contactString1 = "\nI will contact you by phone ";<br/>
+	  var contactString2 = " or email ";<br/>
+	  <br/>
+	  // getting information from the user for each item.<br/>
+	  var myName = prompt("Please enter your name:", "");<br/>
+	  var myAge = prompt("Please enter your age:", "");<br/>
+	  var phone = prompt("Please enter your phone number:", "");<br/>
+	  var email = prompt("Please enter your email address:", "");<br/>
+	  <br/>
+	  //putting it all together into a single string for the alert message response<br/>
+	  var thanksForResponding = GreetingString + myName  + ageString1 + myAge + <br/>ageString2 + contactString1 + phone + contactString2 + email + "\nThank you!";<br/>
+	  <br/>
+	  //returning the assembled information in an alert message<br/>
+	  alert(thanksForResponding);<br/>
+}</p>
+        <input type="button" value="Try me!" onclick="runCodeVariables_onClick();">
+    </section> 
+
+</div>
+</div>
+
+<footer>
+    <p class="copyright float-left">&copy; Copyright 1000, my name</p>
+    <p class="breadcrumbs float-right text-align-R"><a href="Final_Project.html">JavaScript Language Fundamentals</a>
+    <br/><a href="web.html">JavaScript - Web Browser - Web Document Interaction</a></p>
+</footer>
+</body>
+</html>

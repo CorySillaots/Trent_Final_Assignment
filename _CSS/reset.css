@@ -1,0 +1,54 @@
+﻿@charset "UTF-8";
+/* Reset stylesheet*/
+/* basic tag reset removing browser presets on margin, padding, etc. */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption, tfoot, thead,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  }                  
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+
+/* set all tables with collapsed borders and no spacing */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+/* Accessible focus treatment */
+a:hover, a:active {outline: none;} /* removes browser preset for outlining a link */
+a, a:active, a:visited {color: #666;} /* sets default colour of all states of links */
+a:hover, a:focus {color: #000;} /* sets default colour of all states of focus */
+
+/* Placement of text in sub and sup usage */
+sub {vertical-align: sub;
+	font-size: smaller;}
+sup {vertical-align: super;
+	font-size: smaller;
+	}
+
+/* Self-clearing floats */
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}

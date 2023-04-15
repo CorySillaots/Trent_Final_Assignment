@@ -1,0 +1,177 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Project for Javascript (2.1 Browser Objects)</title> 
+<meta name="author" content="my name"> 
+<meta name="keywords" content="Javascript Cheat Sheet"> 
+
+<!-- External Style sheets -->
+<link rel="stylesheet" type="text/css" href="_CSS/reset.css">
+<link rel="stylesheet" type="text/css" href="_CSS/fonts.css">
+<link rel="stylesheet" type="text/css" href="_CSS/global_css.css">
+
+<!-- External Scripts -->
+<script type="text/javascript" src="_assets/A1_Final_Project.js"></script>
+
+</head>
+
+<body>
+
+<h1>Javascript Cheat Sheet</h1> 
+<h2>By my name</h2> 
+<div id="navigation"> 
+<ul id="mainNav"> 
+        <li><a href="#" 
+        onClick="document.getElementById('sideNav-JWB').style.display = 'none';
+        document.getElementById('sideNav-JLF').style.display = 'block'; return false">
+        JavaScript Language Fundamentals</a></li> 
+        <li><a href="#" 
+        onClick="document.getElementById('sideNav-JLF').style.display = 'none';
+        document.getElementById('sideNav-JWB').style.display = 'block'; return false">
+        JavaScript - Web Document Interaction</a></li> 
+</ul> 
+</div> 
+
+<div id="mainContent"> 
+<div id="sideNav"> 
+  <ul id="sideNav-JLF" style="display: none;"> 
+          <li><a href="Final_Project.html">1.1. Variables</a></li> 
+          <li><a href="operators.html">1.2. Operators</a></li> 
+          <li><a href="conditionals.html">1.3. Conditional Statements (if - else if , switch)</a></li> 
+          <li><a href="loops.html">1.4. Loops (for loop + your choice of another loop)</a></li> 
+          <li><a href="functions.html">1.5. Functions</a></li> 
+          <li><a href="objects.html">1.6. JS Objects - General Overview</a></li> 
+          <li><a href="build-in.html">1.7. JS Built-in Objects - A List of at least 5 built-in JS objects</a></li> 
+          <li><a href="arrays.html">1.8. Array Object (in detail)</a></li> 
+          <li><a href="strings.html">1.9. String Object (in detail)</a></li> 
+  </ul> 
+  <ul id="sideNav-JWB" style="display: block;"> 
+          <li><a href="browser.html">2.1. Browser Objects</a></li> 
+          <li><a href="web.html">2.2. HTML Objects</a></li> 
+          <li><a href="events.html">2.3. Events</a></li> 
+  </ul> 
+</div> 
+
+<div id="content" class="float-right"> 
+    <section class="nameDefintion"> 
+        <h3>2.1 Browser Objects</h3> 
+        <p>Browsers are made up of objects that JavaScript can access in exactly the same way that native JavaScript objects are accessed. Since various browsers can have additional different objects, it is best to stick to the core objects common to all browsers for cross-browser functionality.</p>
+        <p>Some examples are the Window,
+          Navigator , 
+          Screen , 
+          History, Document and
+          Location objects. Under that list appear the Forms, Images and Links objects. They are part of the Browser Object Model or B.O.M. </p>
+        <p>The Document object represents the browser page and contains a whole list of its own objects that are discussed in Subsection 2.2 HTML Objects.</p>
+        <p>There is a hierarchy of objects with Window at the very top of the B.O.M. This is a global object, which means that it is always available, as is its properties and methods.</p>
+    </section> 
+    
+    <section class="generalSyntax"> 
+    <h4>General Syntax</h4> 
+        <p>Dot notation is used to access the various properties of the B.O.M.</p> 
+        <p><em>window</em>.defaultStatus = "Hello and Welcome"</p>
+        <p class="JScode">window.defaultStatus = "Hello and Welcome";<br>
+          //sets the status bar message in browsers that display that
+        </p> 
+        
+        <p>Because the Window object is a global object, the keywork <em>window</em> is NOT required to access its methods. They are always available.</p>
+        <p>alert("Hello World!);</p>
+        <p class="JScode">window.alert("Hello World!");<br>
+          //displays a popup alert containing &quot;Hello World!&quot;
+        </p>
+       
+    </section> 
+    <section class="methods"> 
+    <h4>Methods</h4> 
+        <p>There are a huge number of methods available. Here are just the ones available to the Window object.</p>
+        <p>closed = Returns a Boolean value indicating whether a window has been closed or not<br>
+          defaultStatus - Sets or returns the default text in the statusbar of a window<br>
+          document - Returns the Document object for the window (See Document object)<br>
+          frames - Returns an array of all the frames (including iframes) in the current window<br>
+          history - Returns the History object for the window (See History object)<br>
+          innerHeight - Returns the inner height of a window's content area<br>
+          innerWidth - Returns the inner width of a window's content area<br>
+          length - Returns the number of frames (including iframes) in a window<br>
+          location - Returns the Location object for the window (See Location object)<br>
+          name - Sets or returns the name of a window<br>
+          navigator - Returns the Navigator object for the window (See Navigator object)<br>
+          opener - Returns a reference to the window that created the window<br>
+          outerHeight - Returns the outer height of a window, including toolbars/scrollbars<br>
+          outerWidth - Returns the outer width of a window, including toolbars/scrollbars<br>
+          pageXOffset - Returns the pixels the current document has been scrolled (horizontally) from the upper left corner of the window<br>
+          pageYOffset - Returns the pixels the current document has been scrolled (vertically) from the upper left corner of the window<br>
+          parent - Returns the parent window of the current window<br>
+          screen - Returns the Screen object for the window (See Screen object)<br>
+          screenLeft - Returns the x coordinate of the window relative to the screen<br>
+          screenTop - Returns the y coordinate of the window relative to the screen<br>
+          screenX - Returns the x coordinate of the window relative to the screen<br>
+          screenY - Returns the y coordinate of the window relative to the screen<br>
+          self - Returns the current window<br>
+          status - Sets or returns the text in the statusbar of a window<br>
+        top - Returns the topmost browser window</p>
+    </section> 
+    
+    <section class="properties"> 
+    <h4>Properties</h4> 
+    <p>There are a huge number of properties available. Here is a list for just the Window object</p>
+    <p>alert() - Displays an alert box with a message and an OK button<br>
+      atob() - Decodes a base-64 encoded string<br>
+      blur() - Removes focus from the current window<br>
+      btoa() - Encodes a string in base-64<br>
+      clearInterval() - Clears a timer set with setInterval()<br>
+      clearTimeout() - Clears a timer set with setTimeout()<br>
+      close() - Closes the current window<br>
+      confirm() - Displays a dialog box with a message and an OK and a Cancel button<br>
+      createPopup() - Creates a pop-up window<br>
+      focus() - Sets focus to the current window<br>
+      moveBy() - Moves a window relative to its current position<br>
+      moveTo() - Moves a window to the specified position<br>
+      open() - Opens a new browser window<br>
+      print() - Prints the content of the current window<br>
+      prompt() - Displays a dialog box that prompts the visitor for input<br>
+      resizeBy() - Resizes the window by the specified pixels<br>
+      resizeTo() - Resizes the window to the specified width and height<br>
+      scroll() - This method has been replaced by the scrollTo() method.<br>
+      scrollBy() - Scrolls the content by the specified number of pixels<br>
+      scrollTo() - Scrolls the content to the specified coordinates<br>
+      setInterval() - Calls a function or evaluates an expression at specified intervals (in milliseconds)<br>
+      setTimeout() - Calls a function or evaluates an expression after a specified number of milliseconds<br>
+      stop() - Stops the window from loading</p>
+    </section> 
+    <section class="exampleCode"> 
+    <h4>Examples</h4> 
+    <div class="javaSample">
+    <p>Click on the various buttons to get information about your browser window. The code example shown below is just one of the four examples you can see in the actual code.</p>
+<!-- calls functions in external js file -->
+<input type="button" id="javaBrowserSize" onClick="findBrowserSize()" value="Find Browser window size!" >
+<p id="browserSize"></p><!-- placeholder tags for the script to write results into -->
+
+<input type="button" id="javaScreenHeight" onClick="getScreenHeight()" value="Get Screen Height!">
+<p id="screenHeight"></p><!-- placeholder tags for the script to write results into -->
+
+<input type="button" id="javaScreenWidth"  onClick="getScreenWidth()"  value="Get Screen Width!">
+<p id="screenWidth"></p><!-- placeholder tags for the script to write results into -->
+
+<input type="button" id="javaColorDepth" onClick="getColourDepth()" value="Find the number of colours!" >
+<p id="colorDepth"></p><!-- placeholder tags for the script to write results into -->
+</div>
+    <p class="JScode">//Function to get Browser Height and Width<br/>
+function findBrowserSize() {<br/>
+var browserHeight = window.innerHeight; <br/>
+var browserWidth = window.innerWidth; <br/>
+<br/>
+if ((browserHeight != null) && (browserWidth != null)) {<br/>
+	document.getElementById('browserSize').innerHTML=((('The browser window is ') + browserWidth + (' px wide by ') + browserHeight + (' px tall.'))); <br/>} else {document.getElementById('browserSize').innerHTML=((('I am sorry. I cannot get the size of your browser window.')));<br/>
+}}</p>
+    </section> 
+
+</div>
+</div>
+
+<footer>
+    <p class="copyright float-left">&copy; Copyright 1000, my name</p>
+    <p class="breadcrumbs float-right text-align-R"><a href="Final_Project.html">JavaScript Language Fundamentals</a>
+    <br/><a href="web.html">JavaScript - Web Browser - Web Document Interaction</a></p>
+</footer>
+</body>
+</html>

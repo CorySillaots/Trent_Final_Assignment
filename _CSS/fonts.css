@@ -1,0 +1,37 @@
+﻿@charset "UTF-8";
+/* CSS document - Fonts */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Verdana, Helvetica, sans-serif; }
+p, li, a  {font-family: Georgia, serif; }
+
+.JScode {font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; }
+	
+h1 {font-size: 2.5em; }
+h2 {font-size: 2.2em;  }
+h3 {font-size: 2em;  }
+h4 {font-size: 1.7em; line-height: 1.9em; }
+h5 {font-size: 1.5em; line-height: 1.7em; }
+h6 {font-size: 1.2em; line-height: 1.5em; }
+p, #content li {font-size: 1em;   line-height: 1.6em;  }
+li {font-size: .8em;  line-height: 1.6em; }
+.price {font-size: 2em; }
+.JScode {font-size: .95em; line-height: 1.4em; }
+
+h1, h2 {margin: 0;
+	padding: 10px 0 0; /*side padding in global_css under CLASS "content" */
+	}
+h3, h4, h5, h6 {margin: 0;
+	padding: 8px 0 0; /*side padding in global_css under CLASS "content" */
+	}
+p {margin: 0;
+	padding: .5em 0 0; /*side padding in global_css under CLASS "content" */
+	}
+	
+p.copyright, .breadcrumbs  a {color: #adadad; line-height: 1.5em; }
+
+.JScode {margin-left: 3em; }
+
+em {font-weight: bold; font-style: italic; color: rgba(236,37,41,1.00); }
+
+

@@ -1,0 +1,155 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/* Table of contents 
+	Basic Setup
+	links setup
+	General text style setup
+	Alignment classes setup
+	Navigation menu setup
+	Side Navigation setup
+	Contact Us form setup
+	Book Object layout
+	Event setup
+	Footer setup
+*/
+
+/* Basic Setup */
+body {width: 888px;
+	margin: 40px auto;	
+	position: relative; }
+	
+#content {width: 63%; }
+
+/* links setup */
+a {text-decoration: none; color: rgba(26,120,166,1.00); }
+a:hover {font-style: italic; color: rgba(50,155,44,1.00); }
+a:visited { color: rgba(20,110,147,1.00); }
+
+input[type="button"]:hover {background-color: rgba(26,120,166,.5); }
+
+/* General text style setup */
+.heading-full {width: 100%; }
+.heading {width: 50%; }
+h3 {border-bottom: 1px dotted #636363; padding-bottom: 16px; }
+p {padding-bottom: 10px;}
+.author {padding: 0px 0px 5px 3em; }
+
+	
+/* Alignment classes setup */
+.float-left {float: left; }
+.float-right {float: right; }
+.center {margin-left: auto; margin-right: auto; }
+.center-img {display: block; margin-left: auto; margin-right: auto; }
+.clearall {clear: both; }
+.clear-right {clear: right; }
+.text-align-R {text-align: right; }
+.text-align-L {text-align: left; }
+
+/* Navigation menu setup */
+#navigation {width: 100%;
+	float: left;
+	background-color: #000;
+	border-bottom: 4px solid #636363;
+	margin: 12px 0 20px 0; }
+	
+#navigation ul {float: left;
+	list-style: none; }
+
+#navigation ul li {float: left;
+	padding: 0 40px;}
+	
+#navigation a {display: block;
+	padding: 5px 6px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff; }
+	
+#navigation ul li a:hover,
+#navigation ul li a:focus {
+	background: #DF1417;
+	outline: none;
+	border: none;	}
+	
+/* Side Navigation setup */
+#sideNav {margin: 0; }
+
+#sideNav-JWB {display: none; }
+	
+#sideNav ul {width: 33%; float: left;
+	list-style-type: none; }	
+	
+#sideNav li {color: #366ABE;
+	padding: 12px 0 6px;
+	border-top: 1px dotted #636363; }
+	
+#sideNav ul li:first-of-type {border-top: none; padding: 0 0 6px; }
+#sideNav ul li:last-of-type {border-bottom: 1px dotted #636363;
+	margin-bottom: 20px; }
+
+#sideNav li {line-height: 1.5em;
+	padding: 6px 0 12px; }
+	
+#sideNav ul {padding-bottom: 10px;
+	line-height: 1.4em;}
+	
+#content ul {list-style-type: none; }
+
+/* Contact Us form setup */
+#js-contactUS {padding-top: 25px;
+	margin-bottom: 5px;
+	background: rgba(253,207,116,.08); } /* yellow at 8% opacity */
+#js-contactUS label {color: #993633; padding: 0 25px; }
+#js-contactUS input, #js-contactUS textarea {width: 85%; height: 3em; 
+	margin: 12px 0 24px 25px;
+	border: none;	 }
+#js-contactUS input {padding-left: 12px; }	
+
+#js-contactUS input:hover, #js-contactUS input:focus,
+#js-contactUS textarea:hover, #js-contactUS textarea:focus {
+	/*puts a highlight on the active input box*/
+	box-shadow: inset 0px 0px 3px rgba(59,85,16, .5); } /* Dark green at 50% opacity */
+	
+#js-contactUS input[type="button"] {color: #3b4110;
+	width: auto;
+	border: none; background-color: #fff;
+	cursor: pointer;
+	text-align: left;}
+	
+#js-contactUS input[type="button"]:hover,
+#js-contactUS input[type="button"]:focus {
+	box-shadow: none; color: #993633; } /*removed highlight on submit button */
+	
+#js-contactUS textarea {height: 14em; padding: 12px; }
+
+/* Book Object layout */
+input [type="checkbox"] { width: 4em; display: inline; }
+label {font-weight: bold; padding-left: 2em; }
+.author {font-style: italic; }
+.price {font-weight: bold; font-size: 1.5em; }
+
+/* Event setup */
+#circleDiv, #squareDiv {position: relative;
+	width: 100%;
+	clear: both;
+	margin: 10px 0 10px; }
+
+#circleDiv p, #squareDiv p {width: 70%;
+	float: right; }
+	
+p#circleMsg, p#squareMsg {color: red; }
+	
+#piece01, #piece02 {width: 18%; height: auto;
+	position: absolute;
+	top: 20px; left: 20px;
+	z-index: 0; }
+
+
+	
+/* Footer setup */
+footer {width: 100%; 
+	position: static;
+	float: right;
+	border-top: 1px dotted #767676;
+	margin-top: 20px;
+	padding: 6px 0; }

@@ -1,0 +1,151 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Project for Javascript (1.2 Operators)</title> 
+<meta name="author" content="my name"> 
+<meta name="keywords" content="Javascript Cheat Sheet"> 
+
+<!-- External Style sheets -->
+<link rel="stylesheet" type="text/css" href="_CSS/reset.css">
+<link rel="stylesheet" type="text/css" href="_CSS/fonts.css">
+<link rel="stylesheet" type="text/css" href="_CSS/global_css.css">
+
+<!-- External Scripts -->
+<script type="text/javascript" src="_assets/A1.js"></script>
+
+</head>
+
+<body>
+
+<h1>Javascript Cheat Sheet</h1> 
+<h2>By my name</h2> 
+<div id="navigation"> 
+<ul id="mainNav"> 
+        <li><a href="#" 
+        onClick="document.getElementById('sideNav-JWB').style.display = 'none';
+        document.getElementById('sideNav-JLF').style.display = 'block'; return false">
+        JavaScript Language Fundamentals</a></li> 
+        <li><a href="#" 
+        onClick="document.getElementById('sideNav-JLF').style.display = 'none';
+        document.getElementById('sideNav-JWB').style.display = 'block'; return false">
+        JavaScript - Web Document Interaction</a></li> 
+</ul> 
+</div> 
+
+<div id="mainContent"> 
+<div id="sideNav"> 
+  <ul id="sideNav-JLF" style="display: block;"> 
+          <li><a href="Final_Project.html">1.1. Variables</a></li> 
+          <li><a href="operators.html">1.2. Operators</a></li> 
+          <li><a href="conditionals.html">1.3. Conditional Statements (if - else if , switch)</a></li> 
+          <li><a href="loops.html">1.4. Loops (for loop + your choice of another loop)</a></li> 
+          <li><a href="functions.html">1.5. Functions</a></li> 
+          <li><a href="objects.html">1.6. JS Objects - General Overview</a></li> 
+          <li><a href="build-in.html">1.7. JS Built-in Objects - A List of at least 5 built-in JS objects</a></li> 
+          <li><a href="arrays.html">1.8. Array Object (in detail)</a></li> 
+          <li><a href="strings.html">1.9. String Object (in detail)</a></li> 
+  </ul> 
+  <ul id="sideNav-JWB" style="display: none;"> 
+          <li><a href="browser.html">2.1. Browser Objects</a></li> 
+          <li><a href="web.html">2.2. HTML Objects</a></li> 
+          <li><a href="events.html">2.3. Events</a></li> 
+  </ul> 
+</div> 
+
+<div id="content" class="float-right"> 
+  <section class="nameDefintion"> 
+    <h3>1.2 Operators</h3> 
+    <h4>Math operators </h4>
+    <p>Math operators perform mathematical calculations.</p>
+  <ul>
+    <li>+ addition of two numbers (also works on strings) </li>
+    <li>- subtraction (and unary operator which negates values) of two numbers </li>
+    <li>/ division of two numbers </li>
+    <li>* multiplication of two numbers </li>
+    <li>% modulus (the number left over after division of 2 numbers) </li>
+    <li>++ increment (count up by 1) </li>
+    <li>-- decrement (count down by 1) </li>
+  </ul>
+  
+  <h4>Comparison operators </h4>
+  <p>Comparison operators return a value of "true" or "false"</p>
+  <ul>
+    <li>  == "is equal to" </li>
+    <li>=== "is exactly equal to, including type" </li>
+    <li>!= "is not equal to" </li>
+    <li>> greater than </li>
+    <li>&lt; less than </li>
+    <li>>= greater than or equal to </li>
+    <li>&lt;= less than or equal to </li>
+  </ul>
+  
+  <h4>Logic operators </h4>
+  <p>Logical operators compare the left side value to the right side value and return "true" or "false". They can be strung together to get more complex results.</p>
+  <ul>
+    <li>&& (and) - must be true on both sides of the argument</li> 
+    <li>|| (or) - must be true on at least one side of the argument </li>
+    <li>! (logical negative) - if there is a true anywhere in the argument, the result will be false, otherwise the result will be true. </li>
+  </ul>
+    
+  <h4>Assignment operators </h4>
+  <p>Assignment operators apply the right side value to the left side variable. In combination with some math operators, a calculation can be done first, with the result assigned to the left side value.</p>
+  <ul>
+    <li>= assigns the value of the right side to the left side of the operator </li>
+    <li>+= adds both numbers and assigns the result to the left side of the operator (also works with strings) </li>
+    <li>-= subtracts both numbers and assigns the result to the left side </li>
+    <li>*= multiplies and assigns </li>
+    <li>/= divides and assigns </li>
+   <li> %= modulus result and assign</li>
+ </ul>
+    
+  <h4>String Operators </h4>
+  <p>String operators work on string values similarily to how math operators work on numbers.</p>
+  <ul>
+    <li>+ concatenates two strings together </li>
+    <li>+= concatenates two strings and assigns result to left side of operator </li>
+  </ul>
+    
+  <h4>Specials - ternary </h4>
+  <p>This special case is a short-form version of the If...Then...Else expression. It can be a bit difficult to read in coding, so it is best to use it for only simple items. It requires three pieces of information to work.</p>
+  <ul>
+    <li>? : - a simple if... then... else expression. The test is on the left side of the question mark, with the true (then) action placed between the" ?" and the ":" and the false (or else) action on the right of the ":"</li>
+  </ul>
+    </section> 
+    
+    <section class="generalSyntax"> 
+    <h4>General Syntax</h4> 
+        <p>The operator is placed between the two items, (variables, expressions, numbers, strings, etc.), that it is going to act upon. In general, the value on the right is assigned or compared to the value on the left of the operator.</p> 
+        <p>var itemExample <em>=</em> "text example"</p>
+
+        <p class="JScode">var x = (4 * 5) ; <br/>//result 20</p>    
+        <p class="JScode">10 == "10" ; <br/>//result "true"</p>  
+        <p class="JScode">(10 != (2 * 6)) && ("ten" === "ten")); <br/>//result "true"</p>  
+        <p class="JScode">var x = 4; <br/>
+        x += x ; //the value of (x + x) is assigned to var x<br/>
+        //result 8</p>  
+        <p class="JScode">var x = "Hello ";<br/>
+        var y = "World"; <br/>
+        var z = x + y ; <br/>//result "Hello World"</p>  
+    </section> 
+
+    <section class="exampleCode"> 
+    <h4>Examples</h4> 
+    <p>By clicking the "Try me!" button, you will test the special ternary operator.</p>
+    <p class="JScode">//Script sample for Operators 1.2<br/>
+function runCodeOperators_onClick() {<br/>
+	var question = prompt("Yes or No?");<br/>
+	((question == "Yes") || (question == "yes")) ? alert("true") : alert("false");
+}</p>
+        <input type="button" value="Try me!" onclick="runCodeOperators_onClick();">
+    </section> 
+</div>
+</div>
+
+<footer>
+    <p class="copyright float-left">&copy; Copyright 2000, my name</p>
+    <p class="breadcrumbs float-right text-align-R"><a href="Final_Project.html">JavaScript Language Fundamentals</a>
+    <br/><a href="web.html">JavaScript - Web Browser - Web Document Interaction</a></p>
+</footer>
+</body>
+</html>

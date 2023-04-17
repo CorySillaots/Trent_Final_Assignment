@@ -63,8 +63,8 @@
     <h4>General Syntax</h4> 
         <p>This is the general structure of an array:</p> 
         <p class="JScode">
-            var array = [0, 2, 3];<br/>
-            var names = ["Cory","Mike", "Tom"];
+            var numbers = [0, 2, 3];<br/>
+            var names = ["Cory", "Mike", "Tom"];
         </p> 
         <p>Different types of values can be stored into an array such as numbers and strings and can be called based on an index number beginning at 0.</p> 
     </section> 
@@ -80,10 +80,13 @@
     <p>Groceries List:</p>
     <p id="items"></p>
     <p class="JScode">
-   
-    
-    
-</p>
+        var groceries = []<br/>
+        function array_onClick(){<br/>
+        let item = prompt("What do you need from the grocery store?");<br/>
+        groceries.push(item + "<br/>" );
+        document.getElementById("items").innerHTML = groceries;<br/>
+        };<br/>
+    </p>
         <input type="button" value="Add Item" onclick="array_onClick();">
     </section> 
 

@@ -59,12 +59,16 @@ document.getElementById("items").innerHTML = groceries;
 };
 
 
-
+//Script for built in object example 1.7
 function runBuiltIn_onClick(){
 	let answer = prompt("Please enter a number with a decimal spot");
 	let rounded = Math.floor(answer);
-	alert("You're number rounded down to the nearest integer is " + rounded);
-	
+	alert("You're number rounded down to the nearest integer is " + rounded);	
+}
+
+//Script for event example 2.3
+function event_onClick(){
+	alert("Nobodies home. Come back later!")
 }
 
 

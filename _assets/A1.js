@@ -71,6 +71,14 @@ function event_onClick(){
 	alert("Nobodies home. Come back later!")
 }
 
+//Script for functions example 1.5
+function function_onClick(){
+	alert("Please enter two numbers to multiply together.")
+	let userInput = prompt("What is your first number?")
+	let userInputTwo = prompt("What is your second number?")
+	let answer = userInput * userInputTwo;
+	alert(`${userInput} x ${userInputTwo} = ${answer}`);
+}
 
 
 

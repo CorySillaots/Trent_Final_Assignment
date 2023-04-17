@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Project for Javascript (1.1 Variables)</title> 
+<meta name="author" content="my name"> 
+<meta name="keywords" content="Javascript Cheat Sheet"> 
+
+<!-- External Style sheets -->
+<link rel="stylesheet" type="text/css" href="_CSS/reset.css">
+<link rel="stylesheet" type="text/css" href="_CSS/fonts.css">
+<link rel="stylesheet" type="text/css" href="_CSS/global_css.css">
+
+<!-- External Scripts -->
+<script type="text/javascript" src="_assets/A1.js"></script>
+
+</head>
+
+<body>
+<noscript>This website will require JavaScript to be enabled</noscript>
+
+<h1>Javascript Cheat Sheet</h1> 
+<h2>By my name</h2> 
+<div id="navigation"> 
+<ul id="mainNav"> 
+        <li><a href="Final_Project.html" 
+        onClick="document.getElementById('sideNav-JWB').style.display = 'none';
+        document.getElementById('sideNav-JLF').style.display = 'block'; return false">
+        JavaScript Language Fundamentals</a></li> 
+        <li><a href="#" 
+        onClick="document.getElementById('sideNav-JLF').style.display = 'none';
+        document.getElementById('sideNav-JWB').style.display = 'block'; return false">
+        JavaScript - Web Document Interaction</a></li> 
+</ul> 
+</div> 
+
+<div id="mainContent"> 
+<div id="sideNav"> 
+  <ul id="sideNav-JLF" style="display: block;"> 
+          <li><a href="Final_Project.html">1.1. Variables</a></li> 
+          <li><a href="operators.html">1.2. Operators</a></li> 
+          <li><a href="conditionals.html">1.3. Conditional Statements (if - else if , switch)</a></li> 
+          <li><a href="loops.html">1.4. Loops (for loop + your choice of another loop)</a></li> 
+          <li><a href="functions.html">1.5. Functions</a></li> 
+          <li><a href="objects.html">1.6. JS Objects - General Overview</a></li> 
+          <li><a href="build-in.html">1.7. JS Built-in Objects - A List of at least 5 built-in JS objects</a></li> 
+          <li><a href="arrays.html">1.8. Array Object (in detail)</a></li> 
+          <li><a href="strings.html">1.9. String Object (in detail)</a></li> 
+  </ul> 
+  <ul id="sideNav-JWB" style="display: none;"> 
+          <li><a href="browser.html">2.1. Browser Objects</a></li> 
+          <li><a href="web.html">2.2. HTML Objects</a></li> 
+          <li><a href="events.html">2.3. Events</a></li> 
+  </ul> 
+</div> 
+
+<div id="content" class="float-right"> 
+    <section class="nameDefintion"> 
+        <h3>1.5 Functions</h3> 
+        <p>In Javascript, functions allow us to create a block of code that can be reused simply by calling the function and eliminates retyping code.</p> 
+    </section> 
+    <section class="generalSyntax"> 
+    <h4>General Syntax</h4> 
+        <p>This is the general structure of a function:</p> 
+        <p class="JScode">
+            function <em>functionName</em>(parameter 1, parameter 2){<br/>
+                block of code<br/>
+            }
+        </p> 
+        <p>Different types of values can be stored into an array such as numbers and strings and can be called based on an index number beginning at 0.</p> 
+    </section> 
+    <section class="methods"> 
+    <h4>Methods</h4> 
+        <p>Functions are one of the key features of JavaScript and allow users to reuse blocks of code simply by calling the function. The blocks of code and be short, long, simple or complex.</p>
+    <section class="properties"> 
+    <h4>Properties</h4> 
+    <p>A function is made up of the "function" keyword, the specific function name, parameters (which are optional) and the block of code the user wants executed when the function is called.</p>
+    </section> 
+    <section class="exampleCode"> 
+    <h4>Examples</h4>
+    <p>In this example, we will write a function that prompts the user for a number and then multiplies it by 10. The answer will then be displayed in an alert window.</p>
+    <p class="JScode">
+        function function_onClick(){<br/>
+            alert("Please enter two numbers to multiply together.")<br/>
+            let userInput = prompt("What is your first number?")<br/>
+            let userInputTwo = prompt("What is your second number?")<br/>
+            let answer = userInput * userInputTwo;<br/>
+            alert(`${userInput} x ${userInputTwo} = ${answer}`);<br/>
+        }<br/>
+        
+    </p>
+        <input type="button" value="Start Example" onclick="function_onClick();">
+    </section> 
+
+</div>
+</div>
+
+<footer>
+    <p class="copyright float-left">&copy; Copyright 1000, my name</p>
+    <p class="breadcrumbs float-right text-align-R"><a href="Final_Project.html">JavaScript Language Fundamentals</a>
+    <br/><a href="web.html">JavaScript - Web Browser - Web Document Interaction</a></p>
+</footer>
+</body>
+</html>

@@ -33,6 +33,20 @@ function runCodeOperators_onClick() {
 }
 
 
+//Script for Conditionals example 1.3
+function answers_onClick(){
+	var answer = prompt("Rock, Paper or Scissors?");
+	if (answer = "rock"){
+		alert("You beat scissors but look out for paper!");
+	} else if (answer = "paper"){
+		alert("You beat rock but you're no match for scissors!");
+	} else if (answer = "scissors"){
+		alert("You cut paper but you'll never beat a rock!");
+	} else (
+		alert("No cheating! That's not in the game!")
+	)
+}
+
 
 
 

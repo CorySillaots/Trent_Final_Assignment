@@ -51,13 +51,21 @@ function answers_onClick(){
 
 
 //Script for Arrays example 1.8
-var groceries = []
 function array_onClick(){
+var groceries = [];
 let item = prompt("What do you need from the grocery store?");
 groceries.push(item + "<br/>" );
 document.getElementById("items").innerHTML = groceries;
 };
 
+
+
+function runBuiltIn_onClick(){
+	let answer = prompt("Please enter a number with a decimal spot");
+	let rounded = Math.floor(answer);
+	alert("You're number rounded down to the nearest integer is " + rounded);
+	
+}
 
 
 

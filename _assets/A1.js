@@ -50,6 +50,17 @@ function answers_onClick(){
 
 
 
+//Script for Arrays example 1.8
+var groceries = []
+
+
+
+function array_onClick(){
+let item = prompt("What do you need from the grocery store?");
+groceries.push(item + "<br/>" );
+
+document.getElementById("items").innerHTML = groceries;
+};
 
 
 

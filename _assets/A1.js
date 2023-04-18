@@ -82,8 +82,15 @@ function function_onClick(){
 
 
 
-
-
+//Script for loops example 1.4
+function loop_onClick(){
+	let endNum = prompt("What position in the index would you like your for loop to end at?")
+	let userInput = "";
+for (let i = 0; i < endNum; i++) {
+  userInput += i + `<br/>`;
+}
+document.getElementById("loop").innerHTML = userInput;
+}
 
 
 

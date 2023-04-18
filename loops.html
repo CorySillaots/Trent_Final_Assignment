@@ -56,40 +56,47 @@
 
 <div id="content" class="float-right"> 
     <section class="nameDefintion"> 
-        <h3>1.5 Functions</h3> 
-        <p>In Javascript, functions allow us to create a block of code that can be reused simply by calling the function and eliminates retyping code.</p> 
+        <h3>1.4 Loops</h3> 
+        <p>Loops are another feature Javascript uses to repeat tasks based on conditions and uses index numbers starting at 0.</p> 
     </section> 
     <section class="generalSyntax"> 
     <h4>General Syntax</h4> 
-        <p>This is the general structure of a function:</p> 
+        <p>A loop requires three parameters. Where to start, where to end and what increment to move through the index by. There is then a block of code to be executed each time the loop runs. This is the general structure of a Loop:</p> 
         <p class="JScode">
-            function <em>functionName</em>(parameter 1, parameter 2){<br/>
-                block of code<br/>
+            for (i = x; i < 5; i++){<br/>
+                document.getElementById("element_name").adjacentHTML = i;
             }
         </p> 
-        <p>Different types of values can be stored into an array such as numbers and strings and can be called based on an index number beginning at 0.</p> 
+        <p>You can also create a loop within a loop. This is called a nest loop and looks like this:</p> 
+        <p class="JScode">
+            for (i = x; i < 5; i++){<br/>
+                for (k = i; k < 5; k++){}<br/>
+            }
+        </p>
     </section> 
     <section class="methods"> 
     <h4>Methods</h4> 
-        <p>Functions are one of the key features of JavaScript and allow users to reuse blocks of code simply by calling the function. The blocks of code and be short, long, simple or complex.</p>
+        <p>Imagine you need to display numbers 0 - 1000. It would take a long time to type out every number from 0 to 1000. Instead, we would use a for loop that knows to start at 0, increase by 1 until 1000 is reached and display each number each time the loop executes.</p>
     <section class="properties"> 
     <h4>Properties</h4> 
-    <p>A function is made up of the "function" keyword, the specific function name, parameters (which are optional) and the block of code the user wants executed when the function is called.</p>
+    <p>A for loop is made up of an index, starting point, end point, increment and code to be executed each time the loop runs.</p>
     </section> 
     <section class="exampleCode"> 
     <h4>Examples</h4>
     <p>In this example, we will write a function that prompts the user for a number and then multiplies it by 10. The answer will then be displayed in an alert window.</p>
+    <p id="loop"></p>
     <p class="JScode">
-        function function_onClick(){<br/>
-            alert("Please enter two numbers to multiply together.")<br/>
-            let userInput = prompt("What is your first number?")<br/>
-            let userInputTwo = prompt("What is your second number?")<br/>
-            let answer = userInput * userInputTwo;<br/>
-            alert(`${userInput} x ${userInputTwo} = ${answer}`);<br/>
+        function loop_onClick(){<br/>
+            let endNum = prompt("What position in the index would you like your for loop to end at?")<br/>
+            let userInput = "";<br/>
+        for (let i = 0; i < endNum; i++) {<br/>
+          userInput += i + `< br/>`;<br/>
         }<br/>
-        
+        document.getElementById("loop").innerHTML = userInput;<br/>
+        }<br/>
+       <p>It's important to remember that the first position in the index is index number 0. This means that 5 positions in the index are represented by 0, 1, 2, 3, 4</p>      
     </p>
-        <input type="button" value="Start Example" onclick="function_onClick();">
+        <input type="button" value="Start Example" onclick="loop_onClick();">
     </section> 
 
 </div>

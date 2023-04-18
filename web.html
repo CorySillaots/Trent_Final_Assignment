@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Project for Javascript (1.1 Variables)</title> 
+<meta name="author" content="my name"> 
+<meta name="keywords" content="Javascript Cheat Sheet"> 
+
+<!-- External Style sheets -->
+<link rel="stylesheet" type="text/css" href="_CSS/reset.css">
+<link rel="stylesheet" type="text/css" href="_CSS/fonts.css">
+<link rel="stylesheet" type="text/css" href="_CSS/global_css.css">
+
+<!-- External Scripts -->
+<script type="text/javascript" src="_assets/A1.js"></script>
+
+</head>
+
+<body>
+<noscript>This website will require JavaScript to be enabled</noscript>
+
+<h1>Javascript Cheat Sheet</h1> 
+<h2>By my name</h2> 
+<div id="navigation"> 
+<ul id="mainNav"> 
+        <li><a href="Final_Project.html" 
+        onClick="document.getElementById('sideNav-JWB').style.display = 'none';
+        document.getElementById('sideNav-JLF').style.display = 'block'; return false">
+        JavaScript Language Fundamentals</a></li> 
+        <li><a href="#" 
+        onClick="document.getElementById('sideNav-JLF').style.display = 'none';
+        document.getElementById('sideNav-JWB').style.display = 'block'; return false">
+        JavaScript - Web Document Interaction</a></li> 
+</ul> 
+</div> 
+
+<div id="mainContent"> 
+<div id="sideNav"> 
+  <ul id="sideNav-JLF" style="display: block;"> 
+          <li><a href="Final_Project.html">1.1. Variables</a></li> 
+          <li><a href="operators.html">1.2. Operators</a></li> 
+          <li><a href="conditionals.html">1.3. Conditional Statements (if - else if , switch)</a></li> 
+          <li><a href="loops.html">1.4. Loops (for loop + your choice of another loop)</a></li> 
+          <li><a href="functions.html">1.5. Functions</a></li> 
+          <li><a href="objects.html">1.6. JS Objects - General Overview</a></li> 
+          <li><a href="build-in.html">1.7. JS Built-in Objects - A List of at least 5 built-in JS objects</a></li> 
+          <li><a href="arrays.html">1.8. Array Object (in detail)</a></li> 
+          <li><a href="strings.html">1.9. String Object (in detail)</a></li> 
+  </ul> 
+  <ul id="sideNav-JWB" style="display: none;"> 
+          <li><a href="browser.html">2.1. Browser Objects</a></li> 
+          <li><a href="web.html">2.2. HTML Objects</a></li> 
+          <li><a href="events.html">2.3. Events</a></li> 
+  </ul> 
+</div> 
+
+<div id="content" class="float-right"> 
+    <section class="nameDefintion"> 
+        <h3>2.3 HTML Objects</h3> 
+        <p>Objects are used in HTML to organize and implement different elements/features on a webpage.</p> 
+    </section> 
+    <section class="generalSyntax"> 
+    <h4>General Syntax</h4> 
+        <p>An HTML tag name specific to the content of said tag wrapped in an opening and closing tag. See examples for more.</p> 
+     </section> 
+    <section class="methods"> 
+    <h4>Methods</h4> 
+        <p>Using objects in HTML allows the functionality and compatibility with other coding languages.</p>
+    <section class="properties"> 
+    <h4>Properties</h4> 
+    <p>An HTML object consists of an opening and closing tag wrapped around HTML code.</p>
+    </section> 
+    <section class="exampleCode"> 
+    <h4>Examples</h4>
+    <p id="html"></p>
+    <p class="JScode">
+        &lt;section&gt;Internal divs&lt;/section&gt;<br/>
+        &lt;div&gt;HTML Code&lt;/div&gt;<br/>
+        &lt;p&gt;HTML Code&lt;/p&gt;<br/>
+     &lt;button&gt;Button Name&lt;/button&gt;<br/>
+    </p>
+    </section> 
+
+</div>
+</div>
+
+<footer>
+    <p class="copyright float-left">&copy; Copyright 1000, my name</p>
+    <p class="breadcrumbs float-right text-align-R"><a href="Final_Project.html">JavaScript Language Fundamentals</a>
+    <br/><a href="web.html">JavaScript - Web Browser - Web Document Interaction</a></p>
+</footer>
+</body>
+</html>

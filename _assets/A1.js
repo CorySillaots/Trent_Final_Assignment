@@ -92,7 +92,10 @@ for (let i = 0; i < endNum; i++) {
 document.getElementById("loop").innerHTML = userInput;
 }
 
-
+//Script for string example 1.9
+function string_onClick(){
+	alert("The text you are reading in this window is stored in a string!")
+}
 
 
 
